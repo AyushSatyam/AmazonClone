@@ -1,0 +1,70 @@
+.nav_logo {
+  width: 100px;
+  margin: 0 20px;
+  object-fit: contain;
+}
+.nav_search {
+  display: flex;
+  flex: 1;
+}
+.nav_search_icon {
+  background-color: #cd9042;
+  /* color: #cd9042; */
+  padding: 5px;
+  height: 32px !important;
+}
+
+.nav_search_input {
+  height: 32px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.nav_item_class {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav_link {
+  color: white !important;
+}
+
+.header_option_lineone {
+  font-size: 10px;
+}
+.header_option_linesecond {
+  font-size: 13px;
+  font-weight: bold;
+}
+.nav_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.nav_left {
+  width: 90%;
+
+  padding-left: 0px;
+  justify-content: left;
+}
+
+.login_form {
+  display: block;
+  /* flex-direction: column;
+justify-content: center; */
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+.login_form_img {
+  display: flex;
+  justify-content: center;
+}
+
+.login_form_box {
+  display: block;
+  border: rgb(230, 225, 225)  1px solid;
+  border-radius: 4px;
+}
