@@ -7,6 +7,7 @@ import NavBar from "./component/NavBar";
 import Home from "./component/screens/home";
 import Prime from "./component/screens/prime";
 import Order from "./component/screens/order";
+import Footer from "./component/footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route path="/login">
             <Login />
+            <Footer />
           </Route>
           <Route path="/checkout">
             <NavBar />
