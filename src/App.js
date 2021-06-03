@@ -8,22 +8,36 @@ import Prime from "./component/screens/prime";
 import Order from "./component/screens/order";
 import Footer from "./component/footer";
 import Login from "./component/screens/login/login";
+import { LoginContext } from "./context/LoginContext";
+import { useContext } from "react";
 
 function App() {
+  const { loggedIn } = useContext(LoginContext);
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/login">
-            <Login />
-            <Footer />
-          </Route>
+          {loggedIn === false ? (
+            <Route path="/login">
+              <Login />
+
+              <Footer />
+            </Route>
+          ) : (
+            <Route path="/">
+              <NavBar />
+
+              <Home />
+            </Route>
+          )}
           <Route path="/checkout">
             <NavBar />
+
             <Cart />
           </Route>
           <Route path="/orders">
             <NavBar />
+
             <Order />
           </Route>
           <Route path="/prime">
@@ -31,6 +45,7 @@ function App() {
           </Route>
           <Route path="/">
             <NavBar />
+
             <Home />
           </Route>
         </Switch>
