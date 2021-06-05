@@ -17,7 +17,8 @@ const cardText = [
     img: "https://images.unsplash.com/photo-1501163268664-3fdf329d019f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGVsZWN0cm9uaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     text: "Up to 70% off | Electronics clearance store",
     button: false,
-    linkText: "See more"
+    linkText: "See more",
+    linkhref: "/electronics",
   },
   {
     id: 2,
@@ -25,15 +26,18 @@ const cardText = [
     img: "https://images.unsplash.com/photo-1543168256-418811576931?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JvY2VyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     text: "Everyday essentials",
     button: false,
-    linkText: "See more"
+    linkText: "See more",
+    linkhref: "/electronics",
   },
   {
     id: 3,
     altText: "Card 3",
     img: "https://images.unsplash.com/photo-1501163268664-3fdf329d019f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGVsZWN0cm9uaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     text: "Styles for Men | Up to 70% off",
+
     button: false,
-    linkText: "View all offers"
+    linkText: "View all offers",
+    linkhref: "/electronics",
   },
   {
     id: 4,
@@ -41,7 +45,8 @@ const cardText = [
     img: "",
     text: "Sign in for your best experience",
     button: true,
-    linkText: ""
+    linkText: "",
+    linkhref: "/electronics",
   },
 ];
 const items = [
@@ -151,6 +156,7 @@ const Home = (props) => {
                   img={cardTextItem.img}
                   button={cardTextItem.button}
                   linkText={cardTextItem.linkText}
+                  linkhref={cardTextItem.linkhref}
                 />
               </div>
             </Col>

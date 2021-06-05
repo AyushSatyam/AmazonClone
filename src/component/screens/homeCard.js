@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import React from "react";
+import React, { useContext } from "react";
 import {
   Card,
   CardImg,
@@ -12,7 +12,8 @@ import {
   CardLink,
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Login from "./login/login";
+// import Login from "./login/login";
+import { LoginContext } from "../../context/LoginContext";
 // import "style-loader/css-loader/bootstrap/dist/css/bootstrap.css";
 // const Example = (props) => {
 //   return (
@@ -21,6 +22,7 @@ import Login from "./login/login";
 // };
 
 function HomeCard(props) {
+  const { loggedIn } = useContext(LoginContext);
   return (
     <Card className="home_card_card">
       <CardBody>
@@ -48,7 +50,7 @@ function HomeCard(props) {
           </CardText> */}
       {/* <Button>Button</Button> */}
       <CardBody>
-        {props.button === true ? (
+        {props.button === true && loggedIn === false ? (
           // <Button></Button>
           // <Button
           //   className="form_button"
@@ -59,6 +61,7 @@ function HomeCard(props) {
           // >
           //   Sign in securely
           // </Button>
+          // {}
           <CardLink
             href="/login"
             className=" btn form_button"
@@ -67,7 +70,7 @@ function HomeCard(props) {
             Sign in securely
           </CardLink>
         ) : (
-          <CardLink href="#" style={{ textDecoration: "none" }}>
+          <CardLink href={props.linkhref} style={{ textDecoration: "none" }}>
             {props.linkText}
           </CardLink>
         )}

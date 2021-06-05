@@ -10,6 +10,7 @@ import Footer from "./component/footer";
 import Login from "./component/screens/login/login";
 import { LoginContext } from "./context/LoginContext";
 import { useContext } from "react";
+import Electronics from "./component/screens/products/electronicProducts/Electronics";
 
 function App() {
   const { loggedIn } = useContext(LoginContext);
@@ -42,6 +43,10 @@ function App() {
           </Route>
           <Route path="/prime">
             <Prime />
+          </Route>
+          <Route path="/electronics">
+            <NavBar />
+            <Electronics />
           </Route>
           <Route path="/">
             <NavBar />

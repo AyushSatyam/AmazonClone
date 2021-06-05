@@ -175,3 +175,15 @@
   /* padding: 10px; */
   background-color: #f9f9f9;
 }
+/* Electronics */
+.electronics {
+  display: flex;
+  margin: 10px;
+  font-size: 15px;
+}
+.electronics_right_img {
+}
+/* .electronics_left_col {
+  display: flex;
+  flex: 0 0 !important; 
+} */
