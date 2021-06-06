@@ -10,7 +10,8 @@ import Footer from "./component/footer";
 import Login from "./component/screens/login/login";
 import { LoginContext } from "./context/LoginContext";
 import { useContext } from "react";
-import Electronics from "./component/screens/products/electronicProducts/Electronics";
+import Product from "./component/screens/products/electronicProducts/electronicsProductPage/productInformationPage/Product";
+import Electronics from "./component/screens/products/electronicProducts/electronicsProductPage/Electronics";
 
 function App() {
   const { loggedIn } = useContext(LoginContext);
@@ -46,7 +47,12 @@ function App() {
           </Route>
           <Route path="/electronics">
             <NavBar />
+            {/* <Electronics /> */}
             <Electronics />
+          </Route>
+          <Route path="/product/electronic/1234">
+            <NavBar />
+            <Product />
           </Route>
           <Route path="/">
             <NavBar />

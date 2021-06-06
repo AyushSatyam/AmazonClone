@@ -30,7 +30,7 @@ export default function ElectronicsRight() {
       <CardGroup>
         <div style={{ display: "flex" }}>
           <Card style={{ border: "none", margin: "10px" }}>
-            <CardLink href="#">
+            <CardLink href="/product/electronic/1234">
               <CardImg
                 top
                 width="100%"
