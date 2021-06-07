@@ -19,13 +19,10 @@ import {
 export default function ProductUpRight(props) {
   return (
     <div>
-      <p style={{ fontWeight: "bold" }}>
-        Infinity (JBL) Glide 120 Metal in-Ear Wireless Flex Neckband with
-        Bluetooth 5.0 and IPX5 Sweatproof (Black and Yellow)
-      </p>
+      <p style={{ fontWeight: "bold" }}>{props.productName}</p>
       <Link>Seller</Link>
-      <p>Rating</p>
-      <Link>Rating Count</Link>
+      <p>{props.customerReviewsStart}</p>
+      <Link>{props.customerReviewsRating}</Link>
       <Link>Question Count</Link>
       <p>
         M.R.P.:<span>2,999.00</span>
